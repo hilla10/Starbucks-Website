@@ -3,8 +3,9 @@
 :root {
     --primary-color: #ef3340;
     ;
+    --danger-color: rgb(220, 0, 50);
     --secondary-color: #1e3932;
-    --tertiary-color: #b37697;
+    --tertiary-color: rgb(0, 98, 65);
     --extra-color: #76232f;
     --hover-color: rgb(0, 98, 65);
     --box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
@@ -128,7 +129,7 @@ a {
     cursor: pointer;
     display: inline-block;
     background: none;
-    border: 1px solid #000 ;
+    border: 1px solid #000;
     border-radius: 30px;
     padding: 5px 20px;
     line-height: 1.5;
@@ -208,6 +209,10 @@ a {
 
 .bg-extra {
     background-color: var(--extra-color);
+}
+
+.bg-danger-color {
+    background: var(--danger-color);
 }
 
 /* Font Size */
