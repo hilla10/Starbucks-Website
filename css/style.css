@@ -310,13 +310,14 @@ a {
 
 .form .shadow {
     background-color: #ffffff;
-    max-width: 550px;
+    /* max-width: 550px; */
     height: auto;
     margin-top: 40px;
     border-radius: 15px;
     padding: 30px;
     box-shadow: var(--box-shadow);
 }
+
 
 .form .subtitle {
     color: #333;
@@ -444,6 +445,7 @@ a {
     z-index: 100;
     font-size: 15px;
     font-weight: bolder;
+    margin: 0 30px;
 }
 
 .form label span {
@@ -451,10 +453,10 @@ a {
 }
 
 .form input[type=text],
-.form input[type=password],
-.form input[type=email] {
+.form input[type=email],
+.form input[type=password] {
     display: block;
-    padding: 15px 20px;
+    padding: 15px 30px;
     width: 85%;
     border-radius: 10px;
     border: 1px solid #aaa;
@@ -462,6 +464,17 @@ a {
     color: #111;
 }
 
+.max-width input[type=text],
+.max-width input[type=email],
+.max-width input[type=password] {
+    width: 100%;
+}
+
+.max-width {
+    box-sizing: content-box;
+    width: 50%;
+    height: 500px;
+}
 
 input[type=checkbox] {
     width: 25px;
